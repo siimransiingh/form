@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <h2>User Details</h2>
+  <form  enctype="multipart/form-data" action="process.php" method="post" id="myForm">
+    <label for="name">Name:</label>
+    <input class="file-input-label" type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input class="file-input-label" type="number" id="age" name="age" required>
+
+    <label for="weight">Weight:</label>
+    <input class="file-input-label" type="number" id="weight" name="weight" required>
+
+    <label for="email">Email:</label>
+    <input class="file-input-label" type="email" id="email" name="email" required>
+
+    <label for="healthReport">Upload Health Report:</label>
+    <input class="file-input-label" type="file" id="healthReport" name="health_report" required>
+
+    <button class="submit-btn" type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
