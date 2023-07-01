@@ -1,5 +1,5 @@
 <?php
-// Database connection
+
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -10,7 +10,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// File upload handling
+
 $targetDir = "uploads/"; // Directory where uploaded files will be stored
 
 $targetFile = $targetDir . basename($_FILES["health_report"]["name"]);
@@ -23,7 +23,7 @@ if ($fileType != "pdf") {
     $uploadOk = 0;
 }
 
-// Check if the file was uploaded successfully
+
 if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
 } else {
@@ -52,6 +52,6 @@ if ($uploadOk == 0) {
     }
 }
 
-// Close the database connection
+
 mysqli_close($conn);
 ?>
